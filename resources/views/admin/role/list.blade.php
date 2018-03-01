@@ -44,9 +44,9 @@
             </caption>
             <thead>
             <tr>
-                <th>用户ID</th>
-                <th>用户名</th>
-                <th>标识</th>
+                <th>角色ID</th>
+                <th>角色名</th>
+                <th>角色标识</th>
                 <th>操作</th>
             </tr>
             </thead>
@@ -59,7 +59,7 @@
                     <td>
                         <a href="{{ url('/admin/role/detail',$role->id) }}" class="btn btn-success">授权</a>
                         <a type="button"  data-toggle="modal" data-target="#modal"  data-keyboard="false"  href="{{ url('/admin/role/edit',$role->id) }}" class="btn btn-info">编辑</a>
-                        <a href="{{ url('/admin/role/del',$admin->id) }}" class="btn btn-danger">删除</a>
+                        <a href="{{ url('/admin/role/del',$role->id) }}" class="btn btn-danger">删除</a>
                     </td>
                 </tr>
             @endforeach

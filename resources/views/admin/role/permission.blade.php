@@ -42,7 +42,7 @@
                         <hr/>
                         <div class="pager">
                             <input type="submit" class="btn btn-info btn-lg" value="设置权限"/>
-                            <a href="javascript:;" onclick="window.history.back()" class="btn btn-info btn-lg" >返回用户组</a>
+                            <a href="{{ url('/admin/role') }}"  class="btn btn-info btn-lg" >返回用户组</a>
                         </div>
                     </div>
                 </div>

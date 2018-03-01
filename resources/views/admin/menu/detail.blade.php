@@ -27,7 +27,7 @@
         </div>
         <div class="form-group">
             <label for="name">菜单排序</label>
-            <input type="text" name="form[sort]" class="form-control"  placeholder="菜单排序" value="{{ $menus->sort or '' }}">
+            <input type="text" name="form[sort]" class="form-control"  placeholder="菜单排序" value="{{ $menus->sort or 0 }}">
         </div>
         <div class="form-group">
             <label for="content">状态标志</label>

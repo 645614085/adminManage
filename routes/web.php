@@ -59,4 +59,9 @@ Route::group(['prefix'=>'admin','middleware'=>['auth.admin','menu'],'namespace'=
     Route::get("/user/edit/{id}",'AdminUserController@edit');
     Route::post("/user/update",'AdminUserController@update');
     Route::get("/user/del/{id}",'AdminUserController@del');
+
 });
+
+
+//API
+Route::get("/index",'Api\IndexController@index');

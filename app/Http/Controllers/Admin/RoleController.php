@@ -118,11 +118,9 @@ class RoleController extends Controller
         if(is_null($role)){
             return redirect('/admin/role')->withErrors(['角色不存在！']);
         }
-
         $role->delete();
         //清除缓存
         Cache::forget("cloud6Menus".$id);
-
         return redirect('/admin/role')->with('message','角色删除成功！');
     }
 

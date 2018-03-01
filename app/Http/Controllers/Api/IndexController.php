@@ -15,6 +15,7 @@ class IndexController extends BaseController
 {
     public function index(){
       // return  $this->message('success');
+      
         return $this->success(9527);
        // User::get();
     }
